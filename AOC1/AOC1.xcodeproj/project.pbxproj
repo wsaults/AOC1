@@ -18,6 +18,8 @@
 		BE910D541655D92D00361D25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE910D531655D92D00361D25 /* Default-568h@2x.png */; };
 		BE910D571655D92D00361D25 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE910D551655D92D00361D25 /* MainStoryboard.storyboard */; };
 		BE910D5A1655D92D00361D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D591655D92D00361D25 /* ViewController.m */; };
+		BE910D6516594EA500361D25 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D6316594EA500361D25 /* LoginViewController.m */; };
+		BE910D6616594EA500361D25 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE910D6416594EA500361D25 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		BE910D561655D92D00361D25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BE910D581655D92D00361D25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BE910D591655D92D00361D25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE910D6216594EA500361D25 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		BE910D6316594EA500361D25 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		BE910D6416594EA500361D25 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,9 @@
 				BE910D551655D92D00361D25 /* MainStoryboard.storyboard */,
 				BE910D581655D92D00361D25 /* ViewController.h */,
 				BE910D591655D92D00361D25 /* ViewController.m */,
+				BE910D6416594EA500361D25 /* LoginViewController.xib */,
+				BE910D6216594EA500361D25 /* LoginViewController.h */,
+				BE910D6316594EA500361D25 /* LoginViewController.m */,
 				BE910D441655D92D00361D25 /* Supporting Files */,
 			);
 			path = AOC1;
@@ -163,6 +171,7 @@
 				BE910D521655D92D00361D25 /* Default@2x.png in Resources */,
 				BE910D541655D92D00361D25 /* Default-568h@2x.png in Resources */,
 				BE910D571655D92D00361D25 /* MainStoryboard.storyboard in Resources */,
+				BE910D6616594EA500361D25 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				BE910D4A1655D92D00361D25 /* main.m in Sources */,
 				BE910D4E1655D92D00361D25 /* AppDelegate.m in Sources */,
 				BE910D5A1655D92D00361D25 /* ViewController.m in Sources */,
+				BE910D6516594EA500361D25 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

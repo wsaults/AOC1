@@ -89,7 +89,7 @@
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subject" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN7-6S-G4P">
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="OFx-kv-1dY"/>
+                                                                <constraint firstAttribute="height" constant="22" id="Rw2-tw-q0V"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -98,7 +98,13 @@
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-tB-lTP">
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="138" id="Wfw-LB-CqF"/>
-                                                                <constraint firstAttribute="width" constant="210" id="bMT-Rh-a5P"/>
+                                                                <constraint firstAttribute="width" constant="210" id="Z7B-Mb-Pd4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-qG-anq">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="nD8-IM-3Iu"/>
+                                                                <constraint firstAttribute="width" constant="30" id="z2Q-z7-BeB"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
@@ -111,6 +117,8 @@
                                                     <constraint firstItem="LJX-tB-lTP" firstAttribute="top" secondItem="KN7-6S-G4P" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="K0c-cj-Cnx"/>
                                                     <constraint firstItem="KN7-6S-G4P" firstAttribute="top" secondItem="Og3-KZ-coH" secondAttribute="top" constant="20" type="default" id="Zjj-DI-5x6"/>
                                                     <constraint firstItem="KN7-6S-G4P" firstAttribute="leading" secondItem="Og3-KZ-coH" secondAttribute="leading" constant="20" type="default" id="aF3-vQ-k0z"/>
+                                                    <constraint firstItem="Hvp-qG-anq" firstAttribute="centerY" secondItem="KN7-6S-G4P" secondAttribute="centerY" type="default" id="cx3-ih-liQ"/>
+                                                    <constraint firstItem="Hvp-qG-anq" firstAttribute="trailing" secondItem="LJX-tB-lTP" secondAttribute="trailing" type="default" id="f0O-2a-Cmr"/>
                                                 </constraints>
                                             </collectionViewCell>
                                         </cells>
