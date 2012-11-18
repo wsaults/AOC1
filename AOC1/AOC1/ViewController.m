@@ -13,7 +13,11 @@
 #define kTwitterImage twitterIcon.png
 #define kSpotifyImage spotifyIcon.png
 
-@interface ViewController ()
+@interface ViewController () {
+    IBOutlet UIImageView *userProfileImage;
+    IBOutlet UILabel *userNameLabel;
+    IBOutlet UITextView *userProfileInfoTextView;
+}
 
 @end
 
@@ -24,6 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.socialCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"SocialCell"];
+    
+    // TODO: set user specific outlets
+    [userProfileImage setImage:[UIImage imageNamed:@"me.jpg"]];
+    [userNameLabel setText:@"Will Saults"];
+    [userProfileInfoTextView setText:@"I've got loads to say here..."];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -49,23 +58,24 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SocialCell" forIndexPath:indexPath];
     
-    // Modify the cell HERE:
+    // Modify the cell:
     [cell setBackgroundColor:[UIColor colorWithRed:237 green:237 blue:237 alpha:.5]];
     
-    // Content title
+    // Cell Content title
     UILabel *socialContentTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 175, 22)];
     [socialContentTitle setText:@"Title"];
     [socialContentTitle setFont:[UIFont boldSystemFontOfSize:15]];
     [socialContentTitle setBackgroundColor:[UIColor clearColor]];
     
-    // Social indicator
+    // Cell Social indicator
     UIImageView *socialIndicatorImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facebookIcon.png"]];
     [socialIndicatorImageView setFrame:CGRectMake(194, 16, 30, 30)];
     
-    // Social content
-    UIImageView *socialContentImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    // Cell Social content
+    UIImageView *socialContentImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sunset-2.jpg"]];
     [socialContentImage setFrame:CGRectMake(14, 50, 210, 138)];
     
+    // Add subviews to the cell
     [cell addSubview:socialContentTitle];
     [cell addSubview:socialIndicatorImageView];
     [cell addSubview:socialContentImage];

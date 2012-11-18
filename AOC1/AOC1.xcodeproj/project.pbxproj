@@ -22,6 +22,8 @@
 		BE910D6616594EA500361D25 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE910D6416594EA500361D25 /* LoginViewController.xib */; };
 		BE910D6A165953FC00361D25 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D69165953FC00361D25 /* AlertManager.m */; };
 		BE910D7316596B6500361D25 /* facebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE910D7216596B6500361D25 /* facebookIcon.png */; };
+		BE910D75165973A500361D25 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE910D74165973A500361D25 /* me.jpg */; };
+		BE910D771659740400361D25 /* sunset-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE910D761659740400361D25 /* sunset-2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BE910D68165953FC00361D25 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
 		BE910D69165953FC00361D25 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		BE910D7216596B6500361D25 /* facebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookIcon.png; sourceTree = "<group>"; };
+		BE910D74165973A500361D25 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
+		BE910D761659740400361D25 /* sunset-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunset-2.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		BE910D7116596B5900361D25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BE910D761659740400361D25 /* sunset-2.jpg */,
+				BE910D74165973A500361D25 /* me.jpg */,
 				BE910D7216596B6500361D25 /* facebookIcon.png */,
 			);
 			name = Images;
@@ -189,6 +195,8 @@
 				BE910D571655D92D00361D25 /* MainStoryboard.storyboard in Resources */,
 				BE910D6616594EA500361D25 /* LoginViewController.xib in Resources */,
 				BE910D7316596B6500361D25 /* facebookIcon.png in Resources */,
+				BE910D75165973A500361D25 /* me.jpg in Resources */,
+				BE910D771659740400361D25 /* sunset-2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
