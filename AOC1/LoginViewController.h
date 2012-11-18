@@ -12,6 +12,9 @@
     
 }
 
+/**
+ Actions
+ **/
 -(IBAction)loginWithFacebook:(id)sender;
 -(IBAction)loginWithTwitter:(id)sender;
 -(IBAction)loginWithSpotify:(id)sender;

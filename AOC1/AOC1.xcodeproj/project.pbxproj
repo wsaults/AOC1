@@ -20,6 +20,7 @@
 		BE910D5A1655D92D00361D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D591655D92D00361D25 /* ViewController.m */; };
 		BE910D6516594EA500361D25 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D6316594EA500361D25 /* LoginViewController.m */; };
 		BE910D6616594EA500361D25 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE910D6416594EA500361D25 /* LoginViewController.xib */; };
+		BE910D6A165953FC00361D25 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE910D69165953FC00361D25 /* AlertManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		BE910D6216594EA500361D25 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
 		BE910D6316594EA500361D25 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		BE910D6416594EA500361D25 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		BE910D68165953FC00361D25 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		BE910D69165953FC00361D25 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				BE910D6416594EA500361D25 /* LoginViewController.xib */,
 				BE910D6216594EA500361D25 /* LoginViewController.h */,
 				BE910D6316594EA500361D25 /* LoginViewController.m */,
+				BE910D68165953FC00361D25 /* AlertManager.h */,
+				BE910D69165953FC00361D25 /* AlertManager.m */,
 				BE910D441655D92D00361D25 /* Supporting Files */,
 			);
 			path = AOC1;
@@ -186,6 +191,7 @@
 				BE910D4E1655D92D00361D25 /* AppDelegate.m in Sources */,
 				BE910D5A1655D92D00361D25 /* ViewController.m in Sources */,
 				BE910D6516594EA500361D25 /* LoginViewController.m in Sources */,
+				BE910D6A165953FC00361D25 /* AlertManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

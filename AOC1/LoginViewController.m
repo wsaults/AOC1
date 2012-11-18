@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "AlertManager.h"
 
 @interface LoginViewController ()
 
@@ -33,6 +34,23 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Actions
+-(IBAction)loginWithFacebook:(id)sender {
+    [[AlertManager sharedAlertManager] createAlertWithTitle:@"Er... um..." andMessage:@"Sry, cannot login with Facebook yet."];
+}
+
+-(IBAction)loginWithTwitter:(id)sender {
+    
+}
+
+-(IBAction)loginWithSpotify:(id)sender {
+    
+}
+
+-(IBAction)justShowMeTheAssignment:(id)sender {
+    
 }
 
 @end
