@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 
-// TODO: cells have a width of 238 which is 1024 - 40 = 984 - (3 * 10) =  954 / 4 = 238.5
+#define kFacebookImage facebookIcon.png
+#define kTwitterImage twitterIcon.png
+#define kSpotifyImage spotifyIcon.png
 
 @interface ViewController ()
 
@@ -17,15 +19,17 @@
 
 @implementation ViewController
 
+// I would synthesize the socialCollectionView here but it's done for me now.
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.socialCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"SocialCell"];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     // TODO: check if the user is already logged in.
-    [self.navigationController presentViewController:[LoginViewController new] animated:YES completion:nil];
+//    [self.navigationController presentViewController:[LoginViewController new] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,18 +39,36 @@
 
 #pragma mark - UICollectionView DataSource
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4; // 4 Cells for each row.
+    return 4; // 4 Cells for each row(aka: section).
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1; // This will depend on the content coming from the user. TODO: for now we will use 1 section.
+    return 3; // This will depend on the content coming from the user. TODO: for now we will use 2 sections.
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SocialCell" forIndexPath:indexPath];
     
     // Modify the cell HERE:
+    [cell setBackgroundColor:[UIColor colorWithRed:237 green:237 blue:237 alpha:.5]];
     
+    // Content title
+    UILabel *socialContentTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 175, 22)];
+    [socialContentTitle setText:@"Title"];
+    [socialContentTitle setFont:[UIFont boldSystemFontOfSize:15]];
+    [socialContentTitle setBackgroundColor:[UIColor clearColor]];
+    
+    // Social indicator
+    UIImageView *socialIndicatorImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"facebookIcon.png"]];
+    [socialIndicatorImageView setFrame:CGRectMake(194, 16, 30, 30)];
+    
+    // Social content
+    UIImageView *socialContentImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    [socialContentImage setFrame:CGRectMake(14, 50, 210, 138)];
+    
+    [cell addSubview:socialContentTitle];
+    [cell addSubview:socialIndicatorImageView];
+    [cell addSubview:socialContentImage];
     return cell;
 }
 

@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic, weak) IBOutlet UICollectionView *socialCollectionView;
+
 @end
