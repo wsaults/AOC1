@@ -34,4 +34,8 @@ static AlertManager *_sharedAlertManager = nil;
     [alert show];
 }
 
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    NSLog(@"%@",[NSString stringWithFormat:@"Alert dismissed with buttonIndex: %d", buttonIndex]);
+}
+
 @end

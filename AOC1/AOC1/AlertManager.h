@@ -11,7 +11,7 @@
 /**
  AlertManager is a singleton class.
  **/
-@interface AlertManager : NSObject
+@interface AlertManager : NSObject <UIAlertViewDelegate>
 
 /**
  Shared manager class method
